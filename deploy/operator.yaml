@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crdget
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: crdget
+  template:
+    metadata:
+      labels:
+        name: crdget
+    spec:
+      serviceAccountName: crdget
+      containers:
+        - name: crdget
+          # Replace this with the built image name
+          image: REPLACE_IMAGE
+          command:
+          - crdget
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "crdget"

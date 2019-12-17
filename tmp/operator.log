@@ -1,0 +1,26 @@
+time="2019-12-17T14:45:54+10:00" level=info msg="Running the operator locally."
+time="2019-12-17T14:45:54+10:00" level=info msg="Using namespace ."
+2019-12-17T14:45:58.014+1000	INFO	cmd	Operator Version: 0.0.1
+2019-12-17T14:45:58.014+1000	INFO	cmd	Go Version: go1.12
+2019-12-17T14:45:58.014+1000	INFO	cmd	Go OS/Arch: linux/amd64
+2019-12-17T14:45:58.014+1000	INFO	cmd	Version of operator-sdk: v0.12.0
+2019-12-17T14:45:58.016+1000	INFO	leader	Trying to become the leader.
+2019-12-17T14:45:58.016+1000	INFO	leader	Skipping leader election; not running in a cluster.
+2019-12-17T14:45:58.220+1000	INFO	controller-runtime.metrics	metrics server is starting to listen	{"addr": "0.0.0.0:8383"}
+2019-12-17T14:45:58.220+1000	INFO	cmd	Registering Components.
+2019-12-17T14:45:58.220+1000	INFO	controller-runtime.controller	Starting EventSource	{"controller": "customresourcedefinition-controller", "source": "kind source: /, Kind="}
+2019-12-17T14:45:58.220+1000	INFO	controller-runtime.controller	Starting EventSource	{"controller": "customresourcedefinition-controller", "source": "kind source: /, Kind="}
+2019-12-17T14:45:58.221+1000	INFO	cmd	Could not generate and serve custom resource metrics	{"error": "operator run mode forced to local"}
+2019-12-17T14:45:58.424+1000	INFO	cmd	Could not create metrics Service	{"error": "failed to initialize service object for metrics: OPERATOR_NAME must be set"}
+2019-12-17T14:45:58.627+1000	INFO	cmd	Could not create ServiceMonitor object	{"error": "no ServiceMonitor registered with the API"}
+2019-12-17T14:45:58.627+1000	INFO	cmd	Install prometheus-operator in your cluster to create ServiceMonitor objects	{"error": "no ServiceMonitor registered with the API"}
+2019-12-17T14:45:58.627+1000	INFO	cmd	Starting the Cmd.
+2019-12-17T14:45:58.627+1000	INFO	controller-runtime.manager	starting metrics server	{"path": "/metrics"}
+2019-12-17T14:45:58.728+1000	INFO	controller-runtime.controller	Starting Controller	{"controller": "customresourcedefinition-controller"}
+2019-12-17T14:45:58.828+1000	INFO	controller-runtime.controller	Starting workers	{"controller": "customresourcedefinition-controller", "worker count": 1}
+2019-12-17T14:46:19.974+1000	INFO	controller_customresourcedefinition	Reconciling CustomResourceDefinition	{"Request.Namespace": "", "Request.Name": "adds.arithmetic.simple.math.xyz"}
+2019-12-17T14:46:19.974+1000	INFO	controller_customresourcedefinition	crd	{"instance": {"apiVersion": "apiextensions.k8s.io/v1beta1", "kind": "CustomResourceDefinition", "name": "adds.arithmetic.simple.math.xyz"}}
+2019-12-17T14:46:19.982+1000	INFO	controller_customresourcedefinition	Reconciling CustomResourceDefinition	{"Request.Namespace": "", "Request.Name": "adds.arithmetic.simple.math.xyz"}
+2019-12-17T14:46:19.982+1000	INFO	controller_customresourcedefinition	crd	{"instance": {"apiVersion": "apiextensions.k8s.io/v1beta1", "kind": "CustomResourceDefinition", "name": "adds.arithmetic.simple.math.xyz"}}
+2019-12-17T14:46:19.993+1000	INFO	controller_customresourcedefinition	Reconciling CustomResourceDefinition	{"Request.Namespace": "", "Request.Name": "adds.arithmetic.simple.math.xyz"}
+2019-12-17T14:46:19.994+1000	INFO	controller_customresourcedefinition	crd	{"instance": {"apiVersion": "apiextensions.k8s.io/v1beta1", "kind": "CustomResourceDefinition", "name": "adds.arithmetic.simple.math.xyz"}}

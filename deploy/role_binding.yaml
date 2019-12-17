@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: crdget
+subjects:
+- kind: ServiceAccount
+  name: crdget
+roleRef:
+  kind: Role
+  name: crdget
+  apiGroup: rbac.authorization.k8s.io
